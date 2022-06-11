@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="eShopOnContainers.Core.Views.Kadın">
+    <Shell.TitleView>
+        <Label Text="Kadın" FontSize="15" FontAttributes="bold"  TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+    </Shell.TitleView>
+    <ContentPage.Content>
+        <StackLayout>
+            <Button 
+                Text="Tüm Kadın Ürünleri                                                     > " 
+                TextTransform="None"
+                TextColor="Black"
+                BackgroundColor="LightGray" 
+                 
+            ></Button>
+            <Button 
+                Text="Giyim                                                                             > " 
+                TextTransform="None"
+                TextColor="Black"
+                BackgroundColor="LightGray" 
+                 
+            ></Button>
+            <Button 
+                Text="Ayakkabılar                                                                   > " 
+                TextTransform="None"
+                TextColor="Black"
+                BackgroundColor="LightGray" 
+                 
+            ></Button>
+            <Button 
+                Text="Mayo ve Bikiniler                                                          > " 
+                TextTransform="None"
+                TextColor="Black"
+                BackgroundColor="LightGray" 
+                 
+            ></Button>
+            <Button 
+                Text="Aksesuarlar                                                                    > " 
+                TextTransform="None"
+                TextColor="Black"
+                BackgroundColor="LightGray" 
+                 
+            ></Button>
+            <Button 
+                Text="İç Giyim                                                                           > " 
+                TextTransform="None"
+                TextColor="Black"
+                BackgroundColor="LightGray" 
+                 
+            ></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
