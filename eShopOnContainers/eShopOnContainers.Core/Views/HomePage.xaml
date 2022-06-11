@@ -15,7 +15,7 @@
                     <ScrollView Orientation="Horizontal">
                         <StackLayout Orientation="Horizontal">
                             <ImageButton Source="sporayakkabi.PNG" HorizontalOptions="Start" Margin="0,0,0,0"/>
-                            <ImageButton Source="cadir1.PNG"    />
+                            <ImageButton Source="cadir1.PNG" />
                             <ImageButton Source="bisiklet.PNG"/>
                             <ImageButton Source="paten.PNG" />
                             <ImageButton Source="fitness.PNG"/>
