@@ -19,7 +19,7 @@
             <On Platform="iOS, UWP, WinRT, WinPhone" Value="eShop on Containers" />
         </OnPlatform>
     </ContentPage.Title>
-    <ContentPage.Resources>
+        <ContentPage.Resources>
         <ResourceDictionary>
             <converters:FirstValidationErrorConverter x:Key="FirstValidationErrorConverter" />
             <converters:WebNavigatingEventArgsConverter x:Key="WebNavigatingEventArgsConverter" />
@@ -144,7 +144,7 @@
                         Text="["
                         TextColor="{StaticResource LightGreenColor}"/>
                     <Label
-                        Text="LOGIN"
+                        Text="GİRİŞ"
                         FontAttributes="Bold"/>
                     <Label
                         Text="]"
@@ -154,7 +154,7 @@
                   Grid.Column="1"
                   HorizontalOptions="Center">
                     <Label
-                        Text="REGISTER"
+                        Text="KAYIT OL"
                         TextColor="Gray"/>
                 </Grid>
                 <StackLayout  
@@ -162,7 +162,7 @@
                   Orientation="Horizontal"
                   HorizontalOptions="Center">
                     <Label
-                        Text="SETTINGS"/>
+                        Text="AYARLAR"/>
                     <StackLayout.GestureRecognizers>
                         <TapGestureRecognizer
                             Command="{Binding SettingsCommand}"
@@ -173,14 +173,18 @@
             <!-- INFO -->
             <Label
               Grid.Row="1"
-              Text="ARE YOU REGISTERED?"
+              Text="Decathlon Hesabına Giriş Yap!"
               Style="{StaticResource TitleLabelStyle}"/>
+            <Label
+              Text="Oturum Aç"
+              Style="{StaticResource TitleLabelStyle}"
+                Margin="0,70,0,0"/>
             <!-- LOGIN FORM -->
             <StackLayout   
                 Grid.Row="3"
                 Margin="24">
                 <Label
-                  Text="User name or email"
+                  Text="E-posta adresini gir"
                   Style="{StaticResource HeaderLabelStyle}" />
                 <Entry Text="{Binding UserName.Value, Mode=TwoWay}">
 					<Entry.Style>
@@ -207,7 +211,7 @@
 					Text="{Binding UserName.Errors, Converter={StaticResource FirstValidationErrorConverter}}"
 					Style="{StaticResource ValidationErrorLabelStyle}" />
                 <Label
-                  Text="Password"
+                  Text="Sifre giriniz"
                   Style="{StaticResource HeaderLabelStyle}"/>
                 <Entry
                   IsPassword="True"
@@ -240,12 +244,12 @@
                    HorizontalOptions="Center"
                    Grid.Row="2" >
                 <Image
-                    Source="eshop_logo.png"
+                    Source="decathlon_yeni.jpg"
                     Aspect="AspectFit" />
             </Frame>
             <!-- LOGIN BUTTON -->
             <Grid
-                BackgroundColor="{StaticResource LightGreenColor}"
+                BackgroundColor="SteelBlue"
                 Grid.Row="4"
                 Padding="0"
                 ColumnSpacing="0"
