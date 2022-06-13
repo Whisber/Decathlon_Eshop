@@ -4,7 +4,9 @@
              x:Class="eShopOnContainers.Core.Views.Account">
     <ContentPage.Content>
         <StackLayout>
-            <Image Source="decathlon.png"/>
+            <Image Source="decathlon_yeni.png"
+                   HorizontalOptions="Center"/>
+                
             <Label
                 Text="Oturum aç"
                 HorizontalOptions="Center"
@@ -31,6 +33,42 @@
                 HorizontalOptions="Center"
                 BackgroundColor="Transparent"
                 Clicked="Button_Clicked_1" />
+
+            
+            
+
+
+            <Label Text="" />
+            <Label Text= "Yardım"   TextColor="	#007DBC" HorizontalOptions="Center" FontAttributes="Bold"/>
+            <Label Text="" />
+            <Label Text="Gizlilik" TextColor="	#007DBC" HorizontalOptions="Center" FontAttributes="Bold"/>
+
+            <Button 
+            
+                 Text="türkçe"
+                 TextColor="Black"
+                 BackgroundColor="White"
+                 BorderColor="Black"
+                 BorderWidth="1"
+                 CornerRadius="2"           
+                 HeightRequest="40"          
+                 WidthRequest="22"
+                 Margin="88,20"
+            
+                       
+            ></Button>
+
+            <Label HorizontalOptions="Center">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="This site is protected by reCaptcha." />
+                        <Span Text=" Google Privacy Policy" FontAttributes="Bold"/>
+                        <Span Text=" This site is protected by reCaptcha." />
+                        <Span Text=" Their terms of servise" FontAttributes="Bold" />
+
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
