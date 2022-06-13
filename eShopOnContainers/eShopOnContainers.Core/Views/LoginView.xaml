@@ -186,7 +186,9 @@
                 <Label
                   Text="E-posta adresini gir"
                   Style="{StaticResource HeaderLabelStyle}" />
-                <Entry Text="{Binding UserName.Value, Mode=TwoWay}">
+                <Entry Text="{Binding UserName.Value, Mode=TwoWay}"
+                       x:Name="EmailInput"
+                       >
 					<Entry.Style>
                         <OnPlatform x:TypeArguments="Style">
                             <On Platform="iOS, Android" Value="{StaticResource EntryStyle}" />
@@ -213,8 +215,9 @@
                 <Label
                   Text="Sifre giriniz"
                   Style="{StaticResource HeaderLabelStyle}"/>
-                <Entry
+                <Entry                  
                   IsPassword="True"
+                    x:Name="PasswordInput"
                   Text="{Binding Password.Value, Mode=TwoWay}">
                     <Entry.Style>
                         <OnPlatform x:TypeArguments="Style">
@@ -254,8 +257,9 @@
                 Padding="0"
                 ColumnSpacing="0"
                 RowSpacing="0">
-                <Label
-                  Text="[ LOGIN ]"
+                <Button
+                  Text="[ GIRIS ]"
+                  Clicked="LoginClicked"
                   Style="{StaticResource LoginButtonStyle}"/>
                 <Grid.GestureRecognizers>
                     <TapGestureRecognizer

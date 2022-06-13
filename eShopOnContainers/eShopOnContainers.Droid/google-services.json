@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "665710745819",
+    "project_id": "my-decathlon-app",
+    "storage_bucket": "my-decathlon-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:665710745819:android:f11a68a91dbb03e80614fe",
+        "android_client_info": {
+          "package_name": "com.mycompany.eShopOnContainers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "665710745819-kh8hobfia67ced9qti64meapm9q44c3n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJPBti-p0IxM3jAqGUzVXQnnpnlMk38OM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "665710745819-kh8hobfia67ced9qti64meapm9q44c3n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -4,18 +4,34 @@ using System.ComponentModel.DataAnnotations;
 using System.Diagnostics;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using eShopOnContainers.Core;
+using eShopOnContainers.Core.Helpers;
 
 namespace eShopOnContainers.Core.Views
 {
     public partial class LoginView : ContentPage
     {
         private bool _animate;
+        IAuth auth;
 
         public LoginView()
         {
             InitializeComponent();
+            auth = DependencyService.Get<IAuth>();
         }
-
+        async void LoginClicked(object sender, EventArgs e)
+        {
+            string token = await auth.LoginWithEmailAndPassword(EmailInput.Text, PasswordInput.Text);
+            if (token != string.Empty)
+            {
+                await DisplayAlert("Uid", token, "OK");
+                Application.Current.MainPage = new HomePage();
+            }
+            else
+            {
+                await DisplayAlert("Giriş başarısız", "Email veya sifre yanlis", "OK");
+            }
+        }
         protected override async void OnAppearing()
         {
             var content = this.Content;
