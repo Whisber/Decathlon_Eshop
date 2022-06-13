@@ -16,11 +16,7 @@ namespace eShopOnContainers.Core.Views
         {
             InitializeComponent();
         }
-        private async void ImageButton_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new Tumsporlar());
-        }
-
+       
         private void ImageButton_Clicked_1(object sender, EventArgs e)
         {
 

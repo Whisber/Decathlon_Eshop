@@ -16,9 +16,6 @@ namespace eShopOnContainers.Core.Views
         {
             InitializeComponent();
         }
-        private void Button_Clicked_k(object sender, EventArgs e)
-        {
-            
-        }
+       
     }
 }

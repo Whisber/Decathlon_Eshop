@@ -10,17 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace eShopOnContainers.Core.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Tumsporlar : ContentPage
+    public partial class TKurunler : ContentPage
     {
-        public Tumsporlar()
+        public TKurunler()
         {
             InitializeComponent();
-        }
-       
-
-        private void Button_Clicked(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new Kamp());
         }
     }
 }
