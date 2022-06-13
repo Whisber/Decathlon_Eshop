@@ -8,7 +8,7 @@
                 <Label Text="" />
 
                 <ImageButton Source="tumsporlar.png"
-                             
+                             Clicked="ImageButton_Clicked"
                              
                     ></ImageButton>
                 <ImageButton Source="erkek.png"
