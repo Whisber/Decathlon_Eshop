@@ -13,7 +13,7 @@
                 TextTransform="None"
                 TextColor="Black"
                 BackgroundColor="LightGray" 
-                
+                Clicked="Button_Clicked_k"
                  
             ></Button>
             <Button 
