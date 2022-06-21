@@ -35,5 +35,6 @@
         <ShellContent Title="CATALOG" Route="Catalog" Icon="{StaticResource CatalogIconImageSource}" ContentTemplate="{DataTemplate views:CatalogView}" />
         <ShellContent Title="FAVORİLER" Route="Favorites" Icon="Favorites.png" ContentTemplate="{DataTemplate views:Favorites}"/>
         <ShellContent Title="PROFILE" Route="Profile" Icon="{StaticResource ProfileIconImageSource}" ContentTemplate="{DataTemplate views:ProfileView}" />
+        <ShellContent Title="URUNEKLE" Route="Profile" Icon="{StaticResource ProfileIconImageSource}" ContentTemplate="{DataTemplate views:AddProducts}" />
     </TabBar>
 </Shell>

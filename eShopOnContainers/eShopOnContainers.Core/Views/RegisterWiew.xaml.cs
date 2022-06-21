@@ -28,7 +28,7 @@ namespace eShopOnContainers.Core.Views
                 var signOut = auth.SignOut();
                 if (signOut)
                 {
-                    Application.Current.MainPage = new HomePage();
+                    Application.Current.MainPage = new LoginView();
                 }
             }
             else
@@ -38,7 +38,7 @@ namespace eShopOnContainers.Core.Views
         }
         private async void Button_Clicked_2(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Account());
+            await Navigation.PushAsync(new LoginView());
         }
     }
 }

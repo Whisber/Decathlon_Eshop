@@ -171,14 +171,18 @@
                 </StackLayout>
             </Grid>
             <!-- INFO -->
-            <Label
+            <!--<Label
               Grid.Row="1"
               Text="Decathlon Hesabına Giriş Yap!"
               Style="{StaticResource TitleLabelStyle}"/>
             <Label
               Text="Oturum Aç"
               Style="{StaticResource TitleLabelStyle}"
-                Margin="0,70,0,0"/>
+            
+                Margin="0,70,0,0"/> -->
+            <Button Text="KAYIT OL" TextColor="White"
+                  BackgroundColor="{StaticResource BlackColor}"
+                        Clicked="Button_Clicked"/>
             <!-- LOGIN FORM -->
             <StackLayout   
                 Grid.Row="3"
@@ -252,15 +256,15 @@
             </Frame>
             <!-- LOGIN BUTTON -->
             <Grid
-                BackgroundColor="SteelBlue"
+                BackgroundColor="{StaticResource BlackColor}"
                 Grid.Row="4"
                 Padding="0"
                 ColumnSpacing="0"
                 RowSpacing="0">
-                <Button
-                  Text="[ GIRIS ]"
-                  Clicked="LoginClicked"
+                <Label
+                  Text="GİRİŞ YAP"
                   Style="{StaticResource LoginButtonStyle}"/>
+
                 <Grid.GestureRecognizers>
                     <TapGestureRecognizer
                         Command="{Binding MockSignInCommand}"

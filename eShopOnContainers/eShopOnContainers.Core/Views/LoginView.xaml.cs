@@ -19,7 +19,7 @@ namespace eShopOnContainers.Core.Views
             InitializeComponent();
             auth = DependencyService.Get<IAuth>();
         }
-        async void LoginClicked(object sender, EventArgs e)
+        /*async void LoginClicked(object sender, EventArgs e)
         {
             string token = await auth.LoginWithEmailAndPassword(EmailInput.Text, PasswordInput.Text);
             if (token != string.Empty)
@@ -31,7 +31,7 @@ namespace eShopOnContainers.Core.Views
             {
                 await DisplayAlert("Giriş başarısız", "Email veya sifre yanlis", "OK");
             }
-        }
+        }*/
         protected override async void OnAppearing()
         {
             var content = this.Content;
@@ -85,6 +85,11 @@ namespace eShopOnContainers.Core.Views
             {
                 Debug.WriteLine(ex.Message);
             }
+        }
+
+         async void Button_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new RegisterWiew());
         }
     }
 }

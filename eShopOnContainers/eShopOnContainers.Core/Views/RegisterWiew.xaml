@@ -22,7 +22,7 @@
                 x:Name="PasswordInput"/>
             <Button
                 Text="Kayıt OL"
-                Clicked="Button_Clicked_2"
+                Clicked="SignUpClicked"
                 Margin="60,40"
                 BackgroundColor="#4682B4"
                 TextColor="White"/>
