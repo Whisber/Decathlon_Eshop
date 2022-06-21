@@ -180,9 +180,6 @@
               Style="{StaticResource TitleLabelStyle}"
             
                 Margin="0,70,0,0"/> -->
-            <Button Text="KAYIT OL" TextColor="White"
-                  BackgroundColor="{StaticResource BlackColor}"
-                        Clicked="Button_Clicked"/>
             <!-- LOGIN FORM -->
             <StackLayout   
                 Grid.Row="3"
@@ -243,6 +240,25 @@
 						</DataTrigger>
 					</Entry.Triggers>
                 </Entry>
+                <Grid
+                BackgroundColor="#4682B4"
+                Grid.Row="4"
+                Padding="0"
+                ColumnSpacing="0"
+                RowSpacing="0">
+                    <Label
+                  Text="GİRİŞ YAP" VerticalTextAlignment="Center"
+                  Style="{StaticResource LoginButtonStyle}"
+                         HeightRequest="45"/>
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer
+                        Command="{Binding MockSignInCommand}"
+                        NumberOfTapsRequired="1" />
+                    </Grid.GestureRecognizers>
+                </Grid>
+                <Button Text="KAYIT OL" TextColor="White"
+                  BackgroundColor="#4682B4"
+                        Clicked="Button_Clicked"/>
 				<Label 
 					Text="{Binding Password.Errors, Converter={StaticResource FirstValidationErrorConverter}}"
 					Style="{StaticResource ValidationErrorLabelStyle}" />
@@ -254,23 +270,7 @@
                     Source="decathlon_yeni.jpg"
                     Aspect="AspectFit" />
             </Frame>
-            <!-- LOGIN BUTTON -->
-            <Grid
-                BackgroundColor="{StaticResource BlackColor}"
-                Grid.Row="4"
-                Padding="0"
-                ColumnSpacing="0"
-                RowSpacing="0">
-                <Label
-                  Text="GİRİŞ YAP"
-                  Style="{StaticResource LoginButtonStyle}"/>
-
-                <Grid.GestureRecognizers>
-                    <TapGestureRecognizer
-                        Command="{Binding MockSignInCommand}"
-                        NumberOfTapsRequired="1" />
-                </Grid.GestureRecognizers>
-            </Grid>
+            <!-- LOGIN BUTTON -->                     
         </Grid>
         <!-- AUTH -->
         <Grid
