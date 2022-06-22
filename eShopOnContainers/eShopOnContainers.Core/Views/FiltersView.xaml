@@ -27,7 +27,7 @@
         <Setter Property="TextColor"
                 Value="{StaticResource WhiteColor}" />
         <Setter Property="BackgroundColor"
-                Value="{StaticResource LightGreenColor}" />
+                Value="#4682B4" />
         <Setter Property="HeightRequest"
                 Value="48" />
         <Setter Property="BorderRadius"
@@ -71,7 +71,7 @@
     <!-- BRAND -->
     <Picker
       Grid.Row="0"
-      Title="BRAND" 
+      Title="MARKA" 
       ItemsSource="{Binding Brands}"
       SelectedItem="{Binding Brand, Mode=TwoWay}"
       Style="{StaticResource FilterPickerStyle}">
@@ -85,7 +85,7 @@
     <!-- TYPE -->
     <Picker
       Grid.Row="1"
-      Title="TYPE"
+      Title="TIPI"
       ItemsSource="{Binding Types}"
       SelectedItem="{Binding Type, Mode=TwoWay}"
       Style="{StaticResource FilterPickerStyle}">    
@@ -98,12 +98,12 @@
     </Picker>
     <Button 
       Grid.Row="3"
-      Text="Apply" 
+      Text="Uygula" 
       Style="{StaticResource FilterButtonStyle}"
       Clicked="OnFilterClicked"/>   
     <Button
       Grid.Row="4"
-      Text="Clear"
+      Text="Temizle"
       IsEnabled="{Binding IsFilter}"
       Style="{StaticResource ClearFilterButtonStyle}"
       Command="{Binding ClearFilterCommand}"/>

@@ -8,7 +8,7 @@
     xmlns:viewmodels="clr-namespace:eShopOnContainers.Core.ViewModels"
     xmlns:views="clr-namespace:eShopOnContainers.Core.Views"
     xmlns:xtc="http://xamarin.com/schemas/2020/toolkit"
-    Title="CART"
+    Title="SEPET"
     viewModelBase:ViewModelLocator.AutoWireViewModel="true"
     x:DataType="viewmodels:BasketViewModel">
     <ContentPage.Resources>
@@ -63,7 +63,7 @@
                     <StackLayout Orientation="Horizontal" Padding="8" Grid.Row="0">
                         <Label
                             Style="{StaticResource CartTotalStyle}"
-                            Text="TOTAL"
+                            Text="TOPLAM"
                             TextColor="{AppThemeBinding Dark={StaticResource DarkFontColor}, Light={StaticResource LightFontColor}}"
                             HorizontalTextAlignment="End"
                             HorizontalOptions="FillAndExpand"
@@ -89,10 +89,10 @@
             <Grid
                 Grid.Row="1"
                 Padding="0"
-                BackgroundColor="{StaticResource LightGreenColor}"
+                BackgroundColor="#4682B4"
                 ColumnSpacing="0"
                 RowSpacing="0">
-                <Label Style="{StaticResource CheckoutButtonStyle}" Text="[ CHECKOUT ]" />
+                <Label Style="{StaticResource CheckoutButtonStyle}" Text="[ ÖDEME ]" />
                 <Grid.GestureRecognizers>
                     <TapGestureRecognizer Command="{Binding CheckoutCommand}" NumberOfTapsRequired="1" />
                 </Grid.GestureRecognizers>
@@ -102,7 +102,7 @@
         <Grid IsVisible="{Binding BasketItems, Converter={StaticResource ListIsNullOrEmptyConverter}}">
             <Label
                 HorizontalOptions="Center"
-                Text="EMPTY SHOPPING CART"
+                Text="SEPET BOS"
                 VerticalOptions="Center" />
         </Grid>
     </Grid>

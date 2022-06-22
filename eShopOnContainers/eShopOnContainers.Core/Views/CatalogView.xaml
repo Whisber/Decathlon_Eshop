@@ -10,7 +10,7 @@
     xmlns:viewmodels="clr-namespace:eShopOnContainers.Core.ViewModels"
     xmlns:views="clr-namespace:eShopOnContainers.Core.Views;assembly=eShopOnContainers.Core"
     xmlns:xtc="http://xamarin.com/schemas/2020/toolkit"
-    Title="CATALOG"
+    Title="URUNLER"
     viewModelBase:ViewModelLocator.AutoWireViewModel="true"
     x:DataType="viewmodels:CatalogViewModel">
     <ContentPage.Resources>
@@ -50,7 +50,7 @@
         <Label
             HorizontalOptions="Center"
             IsVisible="{Binding Products, Converter={StaticResource ListIsNullOrEmptyConverter}}"
-            Text="NO PRODUCTS FOUND"
+            Text="URUNLER BULUNAMADI"
             VerticalOptions="Center" />
         <ListView
             x:Name="Products"
@@ -80,7 +80,7 @@
             IsRunning="{Binding IsBusy}"
             IsVisible="{Binding IsBusy}"
             VerticalOptions="Center"
-            Color="{StaticResource LightGreenColor}">
+            Color="#4682B4">
             <ActivityIndicator.WidthRequest>
                 <OnPlatform x:TypeArguments="x:Double">
                     <On Platform="iOS, Android" Value="100" />
@@ -104,7 +104,7 @@
             <ImageButton
                 Source="{DynamicResource BasketIconForTitleImageSource}"
                 Command="{Binding ViewBasketCommand}"
-                BackgroundColor="{StaticResource LightGreenColor}"
+                BackgroundColor="#4682B4"
                 Padding="16"
                 CornerRadius="8"
                 HorizontalOptions="Center"
